@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <title>Internship Form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap 5 CDN -->
+  <!-- Bootstrap 5 -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet">
   <style>
-    /* optional: widen invalid feedback text */
     .invalid-feedback { display: block; }
   </style>
 </head>
@@ -44,8 +43,8 @@
           <div class="invalid-feedback">Please provide a valid college.</div>
         </div>
         <div class="col">
-          <label for="graduation-year-input" class="form-label">Graduation Year</label>
-          <select class="form-select" id="graduation-year-input" required>
+          <label for="grad-year-select" class="form-label">Graduation Year</label>
+          <select class="form-select" id="grad-year-select" required>
             <option value="">Choose...</option>
             <option>2020</option>
             <option>2021</option>
@@ -74,7 +73,7 @@
   </div>
 
   <script>
-    // Bootstrap custom validation
+    // Bootstrap validation script
     (() => {
       'use strict';
       const forms = document.querySelectorAll('.needs-validation');
